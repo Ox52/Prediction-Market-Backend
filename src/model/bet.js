@@ -4,14 +4,14 @@ const betSchema = new mongoose.Schema({
 
   userId: {
 
-    type: mongoose.Schema.types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "User",
     required:true
   },
 
-  marketID: {
+  marketId: {
 
-    type: mongoose.Schema.types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "Market",
     required:true
 
@@ -19,7 +19,7 @@ const betSchema = new mongoose.Schema({
 
   },
 
-  betAmout: {
+  betAmount: {
 
     type: Number,
     required:true
